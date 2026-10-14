@@ -1,0 +1,17 @@
+[package]
+name = "word_chain"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.52", features = [
+    "Win32_System_ProcessStatus",
+    "Win32_System_Threading",
+    "Win32_Foundation"
+] }
+
+[target.'cfg(not(windows))'.dependencies]
+libc = "0.2"
