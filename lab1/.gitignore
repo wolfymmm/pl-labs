@@ -1,0 +1,12 @@
+# C++
+/cpp/build/
+/cpp/*.exe
+/cpp/*.out
+/cpp/*.o
+
+# Rust
+/rust/target/
+
+# VS Code / OS
+.vscode/
+.DS_Store
